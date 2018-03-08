@@ -1,14 +1,15 @@
 {
   "name": "loopback-next",
+  "description": "Loopback.js + Next.js scraffolding",
   "version": "1.0.0",
-  "main": "server/server.js",
   "engines": {
     "node": ">=4"
   },
   "scripts": {
+    "dev": "nodemon ./server/server.js",
+    "start": "node ./server/server.js",
     "lint": "standard",
-    "start": "node .",
-    "posttest": "npm run lint && nsp check",
+    "security-check": "nsp check",
     "precommit": "npm run lint"
   },
   "dependencies": {
@@ -34,6 +35,5 @@
     "type": "",
     "url": ""
   },
-  "license": "MIT",
-  "description": "Loopback.js + Next.js scraffolding"
+  "license": "MIT"
 }
