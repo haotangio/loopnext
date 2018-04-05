@@ -1,4 +1,4 @@
-// import Link from 'next/link'
+import Link from 'next/link'
 // import Router from 'next/router'
 import Head from 'next/head'
 import '../scss/style.scss'
@@ -34,7 +34,9 @@ export default () =>
       </div>
       <ul className='navbar-nav flex-row ml-md-auto d-none d-md-flex'>
         <li className='nav-item'>
-          <a className='nav-link active' href='/'>Login</a>
+          <Link href='/login'>
+            <a className='nav-link active'>Login</a>
+          </Link>
         </li>
         <li className='nav-item'>
           <a className='nav-link active' href='/'>Sign Up</a>
@@ -54,7 +56,7 @@ export default () =>
         </li>
       </ul>
     </header>
-    <main className='app-masthead' id='content' role='main'>
+    <main className='app-masthead' role='main'>
       <div className='container'>
         <div className='row align-items-center'>
           <div className='col-6 mx-auto col-md-6 order-md-2'>
