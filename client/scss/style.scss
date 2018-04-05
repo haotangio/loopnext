@@ -1,4 +1,50 @@
-$font-size: 50px;
-.example {
-  font-size: $font-size;
+@import "reset";
+
+$fontSize: 14px;
+$fontSizeSm: 8px;
+$fontSizeLg: 20px;
+$colorPrimary: #00E676;
+$colorPrimaryLight: #69F0AE;
+$colorPrimaryDark: #00C853;
+$colorSecondary: #00E676;
+$colorSecondaryLight: #00E676;
+$colorSecondaryDark: #00E676;
+$spaceSm: 0.5rem;
+$spaceMd: 1rem;
+$spaceLg: 1.5rem;
+
+.app-navbar {
+  background-color: $colorPrimaryDark;
+  color: white;
+
+  .logo {
+    display: inline-block;
+    padding: $spaceMd;
+    font-size: $fontSizeLg;
+  }
+
+  .links {
+    display: inline-block;
+    float: right;
+    padding-top: $spaceMd;
+
+    .link {
+      color: white;
+      text-decoration: none;
+      margin-left: $spaceSm;
+      padding: $spaceMd;
+    }
+  }
+}
+
+.app-body {
+
+}
+
+.app-footer {
+
+}
+
+.app-sidebar {
+
 }

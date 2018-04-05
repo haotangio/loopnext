@@ -41,5 +41,12 @@
     "type": "",
     "url": ""
   },
+  "nodemonConfig": {
+    "watch": [
+      "server",
+      "common"
+    ],
+    "ext": "js json"
+  },
   "license": "MIT"
 }
