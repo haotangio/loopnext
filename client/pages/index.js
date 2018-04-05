@@ -96,10 +96,8 @@ export default () =>
     <footer className='app-footer text-muted'>
       <div className='container-fluid p-3 p-md-5'>
         <ul className='bd-footer-links'>
-          <li><a href='https://github.com/twbs/bootstrap'>GitHub</a></li>
-          <li><a href='https://twitter.com/getbootstrap'>Twitter</a></li>
-          <li><a href='/docs/4.0/examples/'>Examples</a></li>
-          <li><a href='/docs/4.0/about/overview/'>About</a></li>
+          <li><a href='https://github.com/haotangio/loopnext'>GitHub</a></li>
+          <li><a href='https://twitter.com/haotangio'>About</a></li>
         </ul>
         <p>
           Designed and built with all the love in the world by @haotangio
