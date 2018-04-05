@@ -1,0 +1,10 @@
+.app-body {
+  &.app-body--landing {
+    padding: $spaceSm;
+
+    .tool {
+      display: inline-block;
+      width: 50%;
+    }
+  }
+}
