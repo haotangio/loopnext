@@ -93,12 +93,19 @@ export default () =>
             </p>
           </div>
         </div>
+        <h2 className='mt-5 app-text--primary'>Getting Started</h2>
+        <div className='bg-light p-3 mt-3'>
+          <pre><code>git clone https://github.com/haotangio/loopnext.git<br />
+            npm i<br />
+            npm run dev
+          </code></pre>
+        </div>
       </div>
     </main>
     <footer className='app-footer text-muted'>
       <div className='container-fluid p-3 p-md-5'>
         <ul className='bd-footer-links'>
-          <li><a href='https://github.com/haotangio/loopnext'>GitHub</a></li>
+          <li><a href='https://github.com/haotangio/loopnext.git'>GitHub</a></li>
           <li><a href='https://twitter.com/haotangio'>About</a></li>
         </ul>
         <p>
