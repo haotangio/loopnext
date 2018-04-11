@@ -1,10 +1,10 @@
-require('dotenv').config()
+// import User from '../common/entities/User'
+import loopback from 'loopback'
+import boot from 'loopback-boot'
+import winston from 'winston'
 
-const loopback = require('loopback')
-const boot = require('loopback-boot')
-const winston = require('winston')
-
-const app = module.exports = loopback()
+const app = loopback()
+export default app
 
 app.start = function () {
   // start the web server
@@ -26,6 +26,8 @@ boot(app, __dirname, function (err) {
 
   // start the server if `$ node server.js`
   if (require.main === module) {
+    console.log('start server')
+
     app.start()
   }
 })

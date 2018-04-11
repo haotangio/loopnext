@@ -60,3 +60,4 @@ typings/
 # Misc
 .idea
 client/.next
+.dist
