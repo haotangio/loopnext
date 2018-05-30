@@ -15,5 +15,5 @@ if (process.env.NODE_ENV === 'production') {
     ]
   })
   require('babel-polyfill')
-  require('./server/server')
+  require('./server/server').boot()
 }

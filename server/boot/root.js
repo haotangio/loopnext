@@ -1,10 +1,10 @@
-const path = require('path')
-const next = require('next')
-const routes = require('../../common/routes')
+import path from 'path'
+import next from 'next'
+import routes from '../../common/routes'
 
 const dev = process.env.NODE_ENV !== 'production'
 
-module.exports = async function (server) {
+export default async function (server) {
   const router = server.loopback.Router()
 
   const nextInstance = next({

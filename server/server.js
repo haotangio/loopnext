@@ -4,7 +4,7 @@ import boot from 'loopback-boot'
 import winston from 'winston'
 
 const app = loopback()
-export default app
+module.exports = app
 
 app.start = function () {
   // start the web server
@@ -21,13 +21,13 @@ app.start = function () {
 
 // Bootstrap the application, configure models, datasources and middleware.
 // Sub-apps like REST API are mounted via boot scripts.
-boot(app, __dirname, function (err) {
-  if (err) throw err
+app.boot = function () {
+  boot(app, __dirname, function (err) {
+    if (err) throw err
 
-  // start the server if `$ node server.js`
-  if (require.main === module) {
-    console.log('start server')
-
+    // start the server if `$ node server.js`
+    // if (require.main === module) {
     app.start()
-  }
-})
+    // }
+  })
+}

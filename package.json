@@ -6,15 +6,15 @@
     "node": ">=4"
   },
   "scripts": {
-    "dev": "nodemon index.js",
-    "start": "node index.js",
+    "dev": "nodemon server/server.js",
+    "start": "node server/server.js",
     "lint": "standard",
     "lint:fix": "standard --fix",
     "security-check": "nsp check",
     "precommit": "npm run lint"
   },
   "dependencies": {
-    "@zeit/next-sass": "^0.1.2",
+    "@zeit/next-sass": "^0.2.0",
     "compression": "^1.0.3",
     "cors": "^2.5.2",
     "dotenv": "^5.0.1",
@@ -22,9 +22,9 @@
     "loopback": "^3.0.0",
     "loopback-boot": "^2.6.5",
     "loopback-component-explorer": "^5.0.0",
-    "next": "^5.1.0",
-    "next-routes": "^1.4.1",
-    "node-sass": "^4.8.3",
+    "next": "^6.0.3",
+    "next-routes": "^1.4.2",
+    "node-sass": "^4.9.0",
     "react": "^16.3.1",
     "react-dom": "^16.3.1",
     "serve-favicon": "^2.0.1",
@@ -50,8 +50,7 @@
   "nodemonConfig": {
     "watch": [
       "server",
-      "common",
-      "index.js"
+      "common"
     ],
     "ext": "js json"
   },
